@@ -27,7 +27,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Extracting PHP into our new PHP folder, Installing C++, and Installing MySQL
 - Configuring IIS and installing osTicket
 - Verifying osTicket works and Enabling extensions
-- Files permissions
+- File permissions
 
 <h2>Installation Steps</h2>
 
