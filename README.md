@@ -53,9 +53,18 @@ Next, we are going to install PHP Manager for IIS which is a free tool that help
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="440" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/e951be3e-1dd1-43f2-b7b6-af4da1104367">
+<img width="359" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/e7b2e31d-e318-4d89-93f9-290546dcffba">
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  <img width="371" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/17737856-e41e-4939-8736-6dd1441ad43a">
+  <img width="372" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/78f8db0b-d958-4ce3-9d40-84beae278e8e">
+
 </p>
-<br />
+
+<p>
+Then, we are going to download PHP 7.3.8 to our computer. Once it finishes downloading we need to extract all to inside our new PHP folder. Now download C++ redistributable which is a package that installs runtime libraries for C++ applications built with Microsoft tools. But for us, PHP requires it in order to run smoothly. Next, Install MySQL, make sure you click on typical setup and finish the installation. After that, you should get a configuration window to pop up, click on standard configuration and click next until you reach where you can put in a password. This is only lab so I'm going to put Password1 but of course, if this was in a real environment you should always have a complex password for security reasons.
+</p>
+<br /> 
