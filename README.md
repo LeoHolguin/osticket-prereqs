@@ -26,7 +26,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Installing PHP Manager, Rewrite Module, and Creating a new directory 
 - Extracting PHP into our new PHP folder, Installing C++, and Installing MySQL
 - Configuring IIS and installing osTicket
-- Item 5
+- Verifying osTicket works and Enabling extensions
+- Files permissions
 
 <h2>Installation Steps</h2>
 
@@ -79,7 +80,43 @@ Then, we are going to download PHP 7.3.8 to our computer. Once it finishes downl
 </p>
 
 <p>
-Now click open IIS as administrator, you should be able to see what we installed earlier. We are going to register PHP, click on PHP Manager, click on register new PHP version, open the php folder we made earlier, and click on php-cgi as shown in the screenshot above. I recommend restarting the server from the top right of the home page. Next, we download osTicket and after its done downloading we are going to move the upload file we got from osTicket to our wwwroot folder, you can access this folder if you go to your this pc, c drive, inetpub, and wwwroot. Finally, name the upload to osTicket.
+Now click open IIS as administrator, you should be able to see what we installed earlier. We are going to register PHP, click on PHP Manager, click on register new PHP version, open the php folder we made earlier, and click on php-cgi as shown in the screenshot above. I recommend restarting the server from the top right of the home page. Next, we download osTicket and after its done downloading we are going to move the upload file we got from osTicket to our wwwroot folder, you can access this folder if you go to your this pc, c drive, inetpub, and wwwroot. Finally, name the upload file to osTicket.
 </p>
 <br /> 
+</p>
+<img width="617" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/cb2e3708-ed65-456d-a915-afe9763d918c">
+<img width="832" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/bd2e3aba-7a08-43d1-aa66-ecba2269e97b">
+<img width="611" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/0c885c85-d956-495d-89cd-6be8541c65da">
+
+
+
+
+
+  
+
+</p>
+
+<p>
+Go back to IIS and restart the server. On the home page of IIS click on vm-osTicket, then on sites, next on default website, and finally open up osTicket. On the right click on Browse*80(http) and you should see osTicket open up like the screenshot above. Note that some extensions are not enabled. Go back to where you left off and click on PHP manager and click on enable or disable an extension. You should get a screen like mine now we have to look for php_imap.dll, php_intl.dll, and php_opcache.dll. One by one click on them and start enabling them. After we have done this now we can go back to our osTicket page and see that the things we enable worked.
+</p> 
+<br /> 
+</p>
+<img width="702" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/c96355b2-197c-484f-9c22-30cb87c2c3bc">
+<img width="571" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/c1b7fa7f-e1d7-4bf0-98e5-ae2275e541e6">
+<img width="568" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/cddd5376-ee86-4b10-bebf-73a11cc0ac0b">
+
+
+
+
+
+
+  
+
+</p>
+
+<p>
+We are going to find this folder ost-sampleconfig.php and rename it to ost-config.php. Then we are going to change its permissions to let everyone have access to the file because then we won't run into any problems with files not letting us in. Click on the file to see its properties, click on security, now on advanced and click on disable inheritance so it stops inheriting permissions from its parent. From there we are going to click on add, then on select principal, and in the box type in everyone after that press check, apply and okay, and check off full control. We should be ready to go after that.
+</p> 
+<br /> 
+
 
