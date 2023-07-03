@@ -28,6 +28,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Configuring IIS and installing osTicket
 - Verifying osTicket works and Enabling extensions
 - File permissions
+- Finish installing osTicket and setting up a MySQL database
 
 <h2>Installation Steps</h2>
 
@@ -116,6 +117,26 @@ Go back to IIS and restart the server. On the home page of IIS click on vm-osTic
 
 <p>
 We are going to find this folder ost-sampleconfig.php and rename it to ost-config.php. Then we are going to change its permissions to let everyone have access to the file because then we won't run into any problems with files not letting us in. Click on the file to see its properties, click on security, now on advanced and click on disable inheritance so it stops inheriting permissions from its parent. From there we are going to click on add, then on select principal, and in the box type in everyone after that press check, apply and okay, and check off full control. We should be ready to go after that.
+</p> 
+<br /> 
+</p>
+<img width="614" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/1e24c508-078b-47f4-adac-6f94058f84bc">
+<img width="510" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/9fa40a1d-1991-4f26-93de-d5e7ed12199a">
+<img width="236" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/0261a98c-74ea-4789-be01-014d75b097be">
+<img width="454" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/abcfbcf0-8bc2-4534-a4cf-6f24ae3e3ac8">
+
+
+
+
+
+
+
+  
+
+</p>
+
+<p>
+Next, we are going to continue setting up osTicket in the browser. Once we get to this page we are going to fill out system settings and admin user. Before we can continue we have to set up our database. So we are going to install HeidiSQL which allows us to connect to a SQL server and let us osTicket. When Heidi gets done installing open it, At the bottom left we are going to click on new. Now we are going to use the login when we set MySQL from earlier. Find Unnamed right click on it, go to create new and click on database, and we are going to name it osTicket then press okay. We just created a database so our osTicket can finally run. GO back to the osTicket browser and finish filling out database settings and click on intstall. If we we had everything correct we should have a congratulations screen.
 </p> 
 <br /> 
 
