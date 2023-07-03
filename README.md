@@ -22,7 +22,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
+- Installing / Enabling IIS
 - Item 2
 - Item 3
 - Item 4
@@ -35,7 +35,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 <p>
-First, we are going to install and enable IIS (Internet Information Services) which allows our computer to serve up websites such as osTicket. By getting access to our IIS we need to type control panel on the bottom left of our Windows search bar. From there click on programs then click on turn Windows features on or off. You should have something similar to the screenshot I provided above on this part of the screen. Make sure to check off Internet Information Services, expand IIS, and make sure everything in common HTTP features are checked off so we have no errors, now go to applications development features and check off CGI which is a protocol for web servers to execute programs. Finally, click on the ok button to install everything and test it go to a web browser and type in 127.0.0.1 and if you see a page about IIS, you are ready for the next steps.
+First, we are going to install and enable IIS (Internet Information Services) which allows our computer to serve up websites such as osTicket. By getting to our IIS we need to type control panel on the bottom left of our Windows search bar. From there click on programs then click on turn Windows features on or off. You should have something similar to the screenshot I provided above. Make sure to check off Internet Information Services, expand IIS, and make sure everything in common HTTP features are checked off so we have no errors, now go to applications development features and check off CGI which is a protocol for web servers to execute programs. Finally, click on the ok button to install everything, and to test it go to a web browser and type in 127.0.0.1 if you see a page about IIS, you are ready for the next steps.
 </p>
 <br />
 
