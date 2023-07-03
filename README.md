@@ -24,8 +24,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Installing / Enabling IIS
 - Installing PHP Manager, Rewrite Module, and Creating a new directory 
-- Item 3
-- Item 4
+- Extracting PHP into our new PHP folder, Installing C++, and Installing MySQL
+- Configuring IIS and installing osTicket
 - Item 5
 
 <h2>Installation Steps</h2>
@@ -68,3 +68,18 @@ Next, we are going to install PHP Manager for IIS which is a free tool that help
 Then, we are going to download PHP 7.3.8 to our computer. Once it finishes downloading we need to extract all to inside our new PHP folder. Now download C++ redistributable which is a package that installs runtime libraries for C++ applications built with Microsoft tools. But for us, PHP requires it in order to run smoothly. Next, Install MySQL, make sure you click on typical setup and finish the installation. After that, you should get a configuration window to pop up, click on standard configuration and click next until you reach where you can put in a password. This is only lab so I'm going to put Password1 but of course, if this was in a real environment you should always have a complex password for security reasons. Finally, You should find a button to click execute and after that, you are done with MySQL. Basically, we downloaded a database where all the applications are going to be stored at.
 </p>
 <br /> 
+</p>
+<img width="831" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/40f710c0-21f7-4239-ac1f-54b371af2f63">
+<img width="549" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/f277e886-80f7-4275-8386-e955f6493c45">
+<img width="1085" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/4010cf1f-9448-4acd-bd28-854339464986">
+
+
+  
+
+</p>
+
+<p>
+Now click open IIS as administrator, you should be able to see what we installed earlier. We are going to register PHP, click on PHP Manager, click on register new PHP version, open the php folder we made earlier, and click on php-cgi as shown in the screenshot above. I recommend restarting the server from the top right of the home page. Next, we download osTicket and after its done downloading we are going to move the upload file we got from osTicket to our wwwroot folder, you can access this folder if you go to your this pc, c drive, inetpub, and wwwroot. Finally, name the upload to osTicket.
+</p>
+<br /> 
+
