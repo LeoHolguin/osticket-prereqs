@@ -23,7 +23,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Installing / Enabling IIS
-- Item 2
+- Installing PHP Manager, Rewrite Module, and Creating a new directory 
 - Item 3
 - Item 4
 - Item 5
@@ -45,11 +45,13 @@ First, we are going to install and enable IIS (Internet Information Services) wh
 </p>
 <p>
 <img width="385" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/eaf5620c-b87e-4627-a05c-8802a208cfaf">
+<img width="839" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/087db7b5-e7f0-4005-8f5b-a5948e4596e1">
+
 
 
 </p>
 <p>
-Next, we are going to install PHP Manager for IIS which is a free tool that helps you install, configure, and troubleshoot PHP on IIS. After you get done installing PHP Manager you now have to install Rewrite Module. Rewrite Module is a web server module that allows us to create rules to manipulate URLs so we can make friendly URLs for our users to remember and use.
+Next, we are going to install PHP Manager for IIS which is a free tool that helps you install, configure, and troubleshoot PHP on IIS. After you get done installing PHP Manager you now have to install Rewrite Module. Rewrite Module is a web server module that allows us to create rules to manipulate URLs so we can make friendly URLs for our users to remember and use. Now create the directory C:\PHP which you can go to your c drive in your file explorer and create a new folder and name it PHP.
 </p>
 <br />
 
