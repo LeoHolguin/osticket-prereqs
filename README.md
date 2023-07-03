@@ -61,7 +61,7 @@ Next, we are going to install PHP Manager for IIS which is a free tool that help
 </p>
 
 <p>
-Then, we are going to download PHP 7.3.8 to our computer. Once it finishes downloading we need to extract all to inside our new PHP folder. Now download C++ redistributable which is a package that installs runtime libraries for C++ applications built with Microsoft tools. But for us, PHP requires it in order to run smoothly. Next, Install MySQL, make sure you click on typical setup and finish the installation. After that, you should get a configuration window to pop up, click on standard configuration and click next until you reach where you can put in a password. This is only lab so I'm going to put Password1 but of course, if this was in a real environment you should always have a complex password for security reasons. Finally, You should find a button to click execute and after that, you are done with MySQL for now. Basically, we downloaded a database where all the applications are going to be stored at.
+Then, we are going to download PHP 7.3.8 to our computer. Once it finishes downloading we need to extract all to inside our new PHP folder. Now download C++ redistributable which is a package that installs runtime libraries for C++ applications built with Microsoft tools. But for us, PHP requires it in order to run smoothly. Next, Install MySQL, make sure you click on typical setup and finish the installation. After that, you should get a configuration window to pop up, click on standard configuration and click next until you reach where you can put in a password. This is only lab so I'm going to put Password1 but of course, if this was in a real environment you should always have a complex password for security reasons. Finally, You should find a button to click execute and after that, you are done with MySQL for now. Basically, we downloaded a database where all the applications are going to be stored.
 </p>
 <br /> 
 </p>
@@ -92,7 +92,7 @@ Now click open IIS as administrator, you should be able to see what we installed
 </p>
 
 <p>
-Go back to IIS and restart the server. On the home page of IIS click on vm-osTicket, then on sites, next on default website, and finally open up osTicket. On the right click on Browse*80(http) and you should see osTicket open up like the screenshot above. Note that some extensions are not enabled. Go back to where you left off and click on PHP manager and click on enable or disable an extension. You should get a screen like mine now we have to look for php_imap.dll, php_intl.dll, and php_opcache.dll. One by one click on them and start enabling them. After we have done this now we can go back to our osTicket page and see that the things we enable works.
+Go back to IIS and restart the server. On the home page of IIS click on vm-osTicket, then on sites, next on default website, and finally open up osTicket. On the right click on Browse*80(http) and you should see osTicket open up like the screenshot above. Note that some extensions are not enabled. Go back to where you left off and click on PHP manager and click on enable or disable an extension. You should get a screen like mine now we have to look for php_imap.dll, php_intl.dll, and php_opcache.dll. One by one click on them and start enabling them. After we have done this now we can go back to our osTicket page and see that the things we enable work.
 </p> 
 <br /> 
 </p>
@@ -130,7 +130,7 @@ We are going to find the folder ost-sampleconfig.php and rename it to ost-config
 </p>
 
 <p>
-We are going to continue setting up osTicket in the browser. Once we get to this page we are going to fill out system settings and admin user. Before we can continue we have to set up our database. So we are going to install HeidiSQL which allows us to connect to a SQL server and let us osTicket. When Heidi gets done installing open it, At the bottom left we are going to click new. Now we are going to use the login we set up from earlier. Find Unnamed right click on it, go to create new, and click on the database, and we are going to name it osTicket then press okay. We just created a database so our osTicket can finally run. Go back to the osTicket browser and finish filling out database settings and click on install. If we had done everything correct we should have a congratulations screen.
+We are going to continue setting up osTicket in the browser. Once we get to this page we are going to fill out system settings and admin user. Before we can continue we have to set up our database. So we are going to install HeidiSQL which allows us to connect to a SQL server and let us osTicket. When Heidi gets done installing open it, At the bottom left we are going to click new. Now we are going to use the login we set up earlier. Find Unnamed right click on it, go to create new, and click on the database, and we are going to name it osTicket then press okay. We just created a database so our osTicket can finally run. Go back to the osTicket browser and finish filling out database settings and click on install. If we had done everything correctly we should get a congratulations screen.
 </p> 
 <br /> 
 </p>
@@ -148,7 +148,7 @@ We are going to continue setting up osTicket in the browser. Once we get to this
 </p>
 
 <p>
-Finally for the last part, we are going to clean up so we are going to delete the setup folder in osTicket. Go back to the file ost-config.php which we renamed earlier and now change its permission to read only. We are going to login to the osTicket website and make sure everything is up and running and if it is you should be able to get into the ticketing system. 
+Finally, for the last part, we are going to clean up so we are going to delete the setup folder in osTicket. Go back to the file ost-config.php which we renamed earlier and now change its permission to read only. We are going to log in to the osTicket website and make sure everything is up and running and if it is you should be able to get into the ticketing system. 
 </p> 
 <br /> 
 
