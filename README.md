@@ -136,8 +136,25 @@ We are going to find this folder ost-sampleconfig.php and rename it to ost-confi
 </p>
 
 <p>
-Next, we are going to continue setting up osTicket in the browser. Once we get to this page we are going to fill out system settings and admin user. Before we can continue we have to set up our database. So we are going to install HeidiSQL which allows us to connect to a SQL server and let us osTicket. When Heidi gets done installing open it, At the bottom left we are going to click on new. Now we are going to use the login when we set MySQL from earlier. Find Unnamed right click on it, go to create new and click on database, and we are going to name it osTicket then press okay. We just created a database so our osTicket can finally run. GO back to the osTicket browser and finish filling out database settings and click on intstall. If we we had everything correct we should have a congratulations screen.
+Next, we are going to continue setting up osTicket in the browser. Once we get to this page we are going to fill out system settings and admin user. Before we can continue we have to set up our database. So we are going to install HeidiSQL which allows us to connect to a SQL server and let us osTicket. When Heidi gets done installing open it, At the bottom left we are going to click on new. Now we are going to use the login when we set MySQL from earlier. Find Unnamed right click on it, go to create new, and click on the database, and we are going to name it osTicket then press okay. We just created a database so our osTicket can finally run. GO back to the osTicket browser and finish filling out database settings and click on install. If we had everything correct we should have a congratulations screen.
 </p> 
 <br /> 
+</p>
+<img width="702" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/c80d0dcb-979f-42da-989f-68e4de32e3d7">
+<img width="490" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/76310ae3-2def-45bc-a4a9-e35fc75f62be">
+<img width="304" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/971757d2-eefb-4955-9d19-67581833bb4f">
+<img width="719" alt="image" src="https://github.com/LeoHolguin/osticket-prereqs/assets/138087728/7a7a725e-8d74-4387-b7de-1e2e733167af">
 
+
+
+
+
+
+
+</p>
+
+<p>
+Finally for the last part, we are going to clean up so we are going to delete the setup folder in osTicket. Now we are going back to this file ost-config.php which we renamed earlier and change its permission to read only. We are going to login and make sure everything is up and running and if it you be able to get into the ticketing system. 
+</p> 
+<br /> 
 
